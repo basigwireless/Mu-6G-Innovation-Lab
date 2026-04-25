@@ -79,6 +79,12 @@
     <div class="gallery-item">
       <img src="images/25.jpeg" alt="Student Project Showcase" onclick="openLightbox(8, 'lab')">
     </div>
+    <div class="gallery-item">
+      <img src="images/26.jpeg" alt="Student Project Showcase" onclick="openLightbox(9, 'lab')">
+    </div>
+    <div class="gallery-item">
+      <img src="images/27.jpeg" alt="Student Project Showcase" onclick="openLightbox(10, 'lab')">
+    </div>
 
   </div>
 </section>
@@ -203,7 +209,9 @@
     { src: "images/Img5.jpeg", caption: "Industry Collaboration Visit" },
     { src: "images/Img6.jpeg", caption: "Visit of Prof. Gayathri from Monash University, Australia" },
     { src: "images/Img7.jpeg", caption: "Student presenting her project to Prof. Gayathri during her visit from Monash University, Australia" },
-    { src: "images/25.jpeg", caption: "Visit of Dr. RICHARD PINTO ex-professor IIT BOMBAY" }
+    { src: "images/25.jpeg", caption: "Visit of Dr. RICHARD PINTO ex-professor IIT BOMBAY" },
+    { src: "images/26.jpeg", caption: "Lab Activity" },
+    { src: "images/27.jpeg", caption: "Lab Activity" }
   ];
   
   const tech5GImages = [
@@ -261,7 +269,7 @@
     const caption = document.getElementById("lightbox-caption");
 
     img.src = currentGallery[currentIndex].src;
-    caption.textContent = currentGallery[currentIndex].caption;
+    caption.textContent = currentGallery[currentIndex].caption || "";
   }
 
   function closeLightbox() {
